@@ -1,0 +1,10 @@
+Kenwood
+Typical Kenwood radio defaults:
+Speed: 9600 Baud; Parity: N ;Databits: 8; Stopbits: 2 and "hardware handshaking" (RTS and DTR set to "Handshake"). It is recommended by the developers to use a baud rate above 9600 baud if possible. The radio menu and the program setup must be changed together.
+When setting split both VFOs are forced in the same mode.
+Assigning these basic example macros to Function Keys will allow you to play and stop the internal DVK (voice keyer) on radio #1. Other macro strings can be inserted to playback on radio #2 or both radios. See the Macros section of the manual.
+Message1 = {CAT1ASC PB1;}
+Message2 = {CAT1ASC PB2;}
+Message3 = {CAT1ASC PB3;}
+Stop Playback = {CAT1ASC PB0;}
+The TS-590 DVK stop command is sent to the radio when the ESC key is pressed.
